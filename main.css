@@ -1,13 +1,13 @@
 /***********************
 ** EXERCÍCIO - AULA 2 **
 
-1. (iniciar em sala) O arquivo html foi escrito sem preocupação com a semântica das tags, o que prejudica a acessibilidade e a distribuição da página. Observem as tags de cada elemento da página, e substituam as divs pelos elementos que identifiquem o tipo de conteúdo. Para isso, consultem a página: https://developer.mozilla.org/en-US/docs/Web/HTML/Element 
+OK1. (iniciar em sala) O arquivo html foi escrito sem preocupação com a semântica das tags, o que prejudica a acessibilidade e a distribuição da página. Observem as tags de cada elemento da página, e substituam as divs pelos elementos que identifiquem o tipo de conteúdo. Para isso, consultem a página: https://developer.mozilla.org/en-US/docs/Web/HTML/Element 
 2. (continuar em casa) Existem alguns erros de sintaxe propositais no arquivo css. Encontre os erros que causaram os comportamentos a seguir, e corrija o css para obter o resultado esperado. O objetivo não é criar classes de css, mas corrigir pequenos defeitos na sintaxe das classes já existentes no css. Vejam as imagens na pasta "referencias" (os itens referentes a mouse-over não aparecem entre as diferenças)
-2a. Os ícones de redes sociais deveriam ter um destaque ao passar o mouse sobre eles, ficando um pouco mais escuros
-2b. A fonte da linha-fina ("From ancient times...") deveria ter um peso um pouco maior
-2c. O subtítulo "Origins" deveria ter fonte maior e com mais peso
-2d. O bloco de imagem deveria ter a largura da coluna de texto, e a legenda da imagem, um tamanho menor
-2e. No cabeçalho, o logo "Culture" deveria mudar levemente de cor ao passar o mouse sobre o item
+OK2a. Os ícones de redes sociais deveriam ter um destaque ao passar o mouse sobre eles, ficando um pouco mais escuros
+OK2b. A fonte da linha-fina ("From ancient times...") deveria ter um peso um pouco maior
+OK2c. O subtítulo "Origins" deveria ter fonte maior e com mais peso
+OK2d. O bloco de imagem deveria ter a largura da coluna de texto, e a legenda da imagem, um tamanho menor
+OK2e. No cabeçalho, o logo "Culture" deveria mudar levemente de cor ao passar o mouse sobre o item
 
 Salvem o projeto em um reposítório pessoal e enviem ao Github. No Blackboard, enviem o link para o repositório, juntamente com um parágrafo de auto-avaliação do exercício (houve dificuldades? Tempo necessário foi adequado? Alguma parte requer explicação maior?)
 
@@ -84,7 +84,7 @@ a {
     padding: 2rem 3.2rem;
 }
 
-.top-brand :hover {
+.top-brand:hover {
     background-color: #5d3b8d;
 }
 
@@ -154,7 +154,7 @@ a {
     margin: 0.5rem;
 }
 
-.article-social-icons a.hover {
+.article-social-icons a:hover {
     font-size: 2rem;
     text-decoration: none;
     color: rgba(150, 150, 150, 1);
@@ -179,14 +179,14 @@ img.img-opening {
     padding: 0 6rem;
 }
 
-.img-block #small img {
+.img-block.small img {
     display: block;
     width: 100%;
     height: auto;
     margin: 0;
 }
 
-.img-block #small .img-caption {
+.img-block.small .img-caption {
     display: block;
     width: 100%;
     height: auto;
@@ -215,7 +215,7 @@ img.img-opening {
 
 .article-body p.lead {
     font-size: 2.2rem;
-    font-weight: var(-font-weight-lead);
+    font-weight: var(--font-weight-lead);
     color: var(--font-color);
     background-color: #fff;
     padding: 6rem 6rem 1.6rem 6rem;
@@ -228,7 +228,7 @@ img.img-opening {
     margin: 0 auto 3.2rem auto;
 }
 
-.subheading {
+.article-body p.subheading {
     font-weight: 500;
     font-size: 2rem;
 }
